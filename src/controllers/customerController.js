@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Customer = require('../models/Customer');
+const Customer = require('../models/customer');
 
 router.get('/', async (req, res) => {
     try {
@@ -62,4 +62,4 @@ router.delete('/:id', async (req, res) => {
     }
 })
 
-module.exports = app => app.use('/customer', router);
+module.exports = app => app.use('/customers', router);
