@@ -8,7 +8,7 @@ const CustomerSchema = new mongoose.Schema({
         type: String
     },
     birthday: {
-        type: Date
+        type: String
     },
     email: {
         type: String
