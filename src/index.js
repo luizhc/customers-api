@@ -1,9 +1,19 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-
+const mongoose = require('mongoose');
+require('dotenv').config();
+const cors = require('cors')
 const app = express();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-app.listen(3000);
+mongoose.connect(process.env.DATABASE_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
+});
+
+require('./controllers/customerController')(app);
+
+app.listen(process.env.PORT || 3000);
