@@ -1,8 +1,10 @@
-# 💻 Aplicação Back-End para gerenciamento de clientes
+# 💻 Aplicação Back-End
 
-⚡ Tecnologias utilizadas no desenvolvimento:
+## ⚡ Tecnologias Utilizadas
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🚀 Framework [Node.js](https://nodejs.org/) v12.3.1
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;👩‍🚀 Framework [Express.js](https://expressjs.com/) v4.17.1
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🤖 Utilizando a linguagem [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
@@ -10,9 +12,11 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💼 Hospedagem na [Heroku](https://www.heroku.com/)
 
-👨‍🚀 Para visualizar o Front-End [clique aqui](https://github.com/luizhc/customers-web)
+## 🌎 Visualização
 
-## Instalação
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🔥 Para visualizar o Front-End [clique aqui](https://github.com/luizhc/customers-web)
+
+## 🔧 Instalação
 
 É necessário os seguintes programas instalados:
 
@@ -21,7 +25,7 @@
 - Interpretador [Node.js](https://nodejs.org/) para rodar a aplicação;
 - Editor de código-fonte, sugiro o [VS Code](https://code.visualstudio.com/).
 
-## Configuração / Inicialização
+## 🔌 Configuração / Inicialização
 
 - Após clonar o projeto em seu computador com o comando `git clone https://github.com/luizhc/customers-api.git`;
 - Vá até a pasta do projeto e instale as depêndencias com o comando `npm install`;
