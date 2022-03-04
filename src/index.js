@@ -1,7 +1,7 @@
-const express = require('express');
-const mongoose = require('mongoose');
-require('dotenv').config();
-const cors = require('cors')
+const express = require("express");
+const mongoose = require("mongoose");
+require("dotenv").config();
+const cors = require("cors");
 const app = express();
 
 app.use(cors());
@@ -9,11 +9,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 mongoose.connect(process.env.DATABASE_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
 });
 
-require('./controllers/customerController')(app);
+require("./controllers/customerController")(app);
+require("./controllers/visitController")(app);
 
 app.listen(process.env.PORT || 3000);
